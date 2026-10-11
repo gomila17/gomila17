@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Toni Gomila - Backend Java developer y homelab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#161b3a"/>
+      <stop offset="1" stop-color="#2a1646"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.5" stop-color="#a371f7"/>
+      <stop offset="1" stop-color="#ff7b72"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a371f7" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="typeclip">
+      <rect x="60" y="150" height="40" width="0">
+        <animate attributeName="width" values="0;640;640" keyTimes="0;0.55;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="240" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="240" rx="18" fill="url(#grid)"/>
+
+  <!-- resplandores -->
+  <circle cx="760" cy="60" r="150" fill="url(#glow)">
+    <animate attributeName="r" values="130;170;130" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="220" r="120" fill="url(#glow)" opacity="0.6">
+    <animate attributeName="r" values="100;140;100" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- red de nodos (guiño al homelab) -->
+  <g stroke="#58a6ff" stroke-opacity="0.35" stroke-width="1.2" fill="none">
+    <path d="M640 50 L720 100 L810 60 L840 150 L730 180 L720 100"/>
+    <path d="M810 60 L860 30"/>
+    <path d="M730 180 L650 200"/>
+  </g>
+  <g fill="#58a6ff">
+    <circle cx="640" cy="50" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="100" r="7" fill="#a371f7"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="810" cy="60" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="150" r="6" fill="#ff7b72"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="730" cy="180" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="30" r="4"/>
+    <circle cx="650" cy="200" r="4"/>
+  </g>
+  <!-- paquete viajando por la red -->
+  <circle r="3.5" fill="#ffffff">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M640 50 L720 100 L810 60 L840 150 L730 180"/>
+  </circle>
+
+  <!-- barra tipo ventana -->
+  <g>
+    <circle cx="38" cy="34" r="6" fill="#ff5f56"/>
+    <circle cx="58" cy="34" r="6" fill="#ffbd2e"/>
+    <circle cx="78" cy="34" r="6" fill="#27c93f"/>
+    <text x="100" y="38" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">~/gomila.dev</text>
+  </g>
+
+  <!-- titulo -->
+  <text x="60" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="800" fill="url(#title)">Toni Gomila</text>
+  <text x="62" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="17" fill="#c9d1d9" letter-spacing="1">Backend Java · Homelab · Self-hosting</text>
+
+  <!-- linea con efecto maquina de escribir -->
+  <g clip-path="url(#typeclip)">
+    <text x="62" y="178" font-family="'Courier New', monospace" font-size="19" fill="#7ee787">$ construyendo cosas robustas, en el trabajo y en casa</text>
+  </g>
+  <rect x="62" y="162" width="10" height="22" fill="#7ee787">
+    <animate attributeName="x" values="62;702;702" keyTimes="0;0.55;1" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

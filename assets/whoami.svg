@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Terminal con información de perfil de Toni">
+  <defs>
+    <style>
+      .p  { font-family: 'Courier New', monospace; font-size: 16px; fill: #7ee787; }
+      .c  { font-family: 'Courier New', monospace; font-size: 16px; fill: #e6edf3; }
+      .k  { font-family: 'Courier New', monospace; font-size: 16px; fill: #79c0ff; }
+      .v  { font-family: 'Courier New', monospace; font-size: 16px; fill: #ffa657; }
+      .l1 { opacity: 0; animation: show 14s infinite; animation-delay: 0.2s; }
+      .l2 { opacity: 0; animation: show 14s infinite; animation-delay: 1.2s; }
+      .l3 { opacity: 0; animation: show 14s infinite; animation-delay: 1.8s; }
+      .l4 { opacity: 0; animation: show 14s infinite; animation-delay: 2.4s; }
+      .l5 { opacity: 0; animation: show 14s infinite; animation-delay: 3.0s; }
+      .l6 { opacity: 0; animation: show 14s infinite; animation-delay: 3.6s; }
+      .l7 { opacity: 0; animation: show 14s infinite; animation-delay: 4.4s; }
+      @keyframes show { 0% {opacity:0} 2% {opacity:1} 90% {opacity:1} 96% {opacity:0} 100% {opacity:0} }
+      .cur { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="260" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <path d="M0 14 a14 14 0 0 1 14 -14 H886 a14 14 0 0 1 14 14 V40 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+  <text x="450" y="25" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">toni@homelab: ~</text>
+
+  <g class="l1"><text x="28" y="76" class="p">toni@homelab:~$</text><text x="196" y="76" class="c">cat sobre_mi.yml</text></g>
+  <g class="l2"><text x="28" y="108" class="k">rol:</text><text x="100" y="108" class="v">Senior Software Developer @ Inetum</text></g>
+  <g class="l3"><text x="28" y="132" class="k">base:</text><text x="100" y="132" class="v">Barcelona</text></g>
+  <g class="l4"><text x="28" y="156" class="k">trabajo:</text><text x="130" y="156" class="v">[Java, Spring, Oracle]</text></g>
+  <g class="l5"><text x="28" y="180" class="k">casa:</text><text x="100" y="180" class="v">[Proxmox, Docker, Cloudflare, n8n]</text></g>
+  <g class="l6"><text x="28" y="204" class="k">ahora:</text><text x="116" y="204" class="v">"más self-hosting, multimedia e IA local"</text></g>
+  <g class="l7"><text x="28" y="236" class="p">toni@homelab:~$</text><rect class="cur" x="198" y="222" width="10" height="18" fill="#7ee787"/></g>
+</svg>
